@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>MM3 Hotéis</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        
+        <div class="container">
+            <h1>MM3 Hotéis</h1>
+            <p>Sistema de Gerenciamento de Acomodações</p>
+
+            <form action="controle_acomodacao" method="post">
+
+                <label>Nome Propriedade:</label>
+                <input type="text" name="txtnome">
+
+                <br><br>
+
+                <label>Tipo Acomodação:</label>
+                <input type="text" name="txttipo">
+
+                <br><br>
+
+                <label>Capacidade Hóspedes:</label>
+                <input type="number" name="txtcapacidade">
+
+                <br><br>
+
+                <label>Quantidade Quartos:</label>
+                <input type="number" name="txtquartos">
+
+                <br><br>
+
+                <label>Preço Diária:</label>
+                <input type="number" name="txtpreco">
+
+                <br><br>
+
+                <label>Aceita Pets:</label>
+
+                <select name="txtpets">
+                    <option value="true">Sim</option>
+                    <option value="false">Não</option>
+                </select>
+
+                <br><br>
+
+                <label>Possui Wifi:</label>
+
+                <select name="txtwifi">
+                    <option value="true">Sim</option>
+                    <option value="false">Não</option>
+                </select>
+
+                <br><br>
+
+                <label>Endereço:</label>
+                <input type="text" name="txtendereco">
+
+                <br><br>
+
+                <label>Avaliação Média:</label>
+                <input type="number" name="txtavaliacao">
+
+                <br><br>
+                
+                <div class="botoes">
+
+                    <input type="submit" name="op" value="CADASTRAR">
+                    <input type="submit" name="op" value="CONSULTAR TODOS">
+                    <input type="submit" name="op" value="CONSULTAR BY ID">
+                    <input type="submit" name="op" value="ATUALIZAR">
+                    <input type="submit" name="op" value="DELETAR">
+                
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
